@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./../img/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="flexNav">
+        <nav>
+            <img src="./../img/sprout.png" class="flexNav__Logo" alt="Logo brote"/>
+            <a href="./../../index.html" class="flexNav__Link">Inicio</a>
+            <a href="./galeria.html" class="flexNav__Link">Galeria</a>
+            <a href="./shop.html" class="flexNav__Link">Shop</a>
+            <a href="./contacto.html" class="flexNav__Link actual"> >Contacto< </a>
+            <a href="./registro.html" class="flexNav__Link">Registro</a>
+            <img src="./../img/sprout.png" class="flexNav__Logo" alt="Logo brote"/>
+        </nav>
+    </header>
+    <h3 class="contactSubtitle">Aqui abajo les dejo para que completen en caso de necesitar contactarse</h3>
+    <div class="contactFlex">
+        <form class="contactForm">
+            <div>
+                <h1>Contacto</h1>
+                <label for="Nombre">Nombre/s:</label> 
+                <input type="text" name="Nombre"/>
+            </div>
+            <div>
+                <label for="Apellido">Apellido/s:</label>
+                <input type="text" name="Apellido"/>
+            </div>
+            <div>
+                <label for="email" placeholder="ejemplo@mail.com">E-mail:</label>
+                <input type="email" name="email"/>
+            </div>
+            <div>Quiere subscribirse al Newsletter?
+                <input type="checkbox" name="acepta" value="1" />
+            </div>
+            <label for="contacto">Comentario o consulta: </label>
+            <div>
+                <textarea name="contacto" rows="6" cols="70" placeholder="Por favor detallar la razon de contacto o consulta"></textarea>
+            </div>
+            <div class="contactForm__buttons">
+                <input type="reset" value="Limpiar"/>
+                <input type="button" value="X"/>
+                <input type="submit" value="Enviar"/>
+            </div>
+        </form>
+    </div>
+    <footer class="footFlex">
+        <iframe src="./galeria.html" class="footFlex__internalLink">Galeria</iframe>
+        <p class="footFlex__text">Datos de contacto</p>
+        <iframe src="https://www.youtube-nocookie.com/embed/ZHwSjSOUxtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="footFlex__externalLink"></iframe>
+    </footer>
+</body>
+</html>

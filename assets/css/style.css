@@ -1,0 +1,286 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+body {
+    background-color: rgb(99, 178, 151);
+    font-size: 62.5%;
+}
+header {
+    background-color: rgb(139, 139, 139);
+    position: sticky;
+    top: 0px;
+    border-bottom: 3px;
+    border-bottom-style: groove;
+    border-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 720px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.flexNav__Logo {
+    width: 55px;
+    display: none;
+}
+@media screen and (min-width: 720px) {
+    .flexNav__Logo {
+        display: inline-block;
+    }
+}
+
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: rgb(102, 84, 30);
+    background-color: rgb(99, 178, 151);
+    color: rgb(46, 45, 42);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: small;
+    text-shadow: 1px 1px 1px rgb(139, 139, 139);
+}
+
+a:hover {
+    background-color: goldenrod;
+    border-style: inset;
+    border-color: rgb(102, 84, 30);
+}
+
+@media screen and (min-width: 720px){
+    a {
+        display: inline-block;
+    }
+}
+
+.actual {
+    background-color: burlywood;
+    border-color: rgb(139, 139, 139);
+    border-style: inset;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(46, 45, 42);
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(46, 45, 42);
+    font-size: xx-large;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(46, 45, 42);
+}
+
+input, textarea, select {
+    background-color: rgb(223, 223, 211);
+    border-color: goldenrod;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.plantType {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plantType__box {
+    width: 350px;
+    margin: 2rem auto;
+    padding: 5px;
+    border-style: groove;
+    border-width: 4px;
+    border-color:darkgoldenrod;
+    background-color: rgb(139, 139, 139);
+}
+
+
+.plantType__box__image {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.plantType__box__description--name {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-size: large;
+}
+@media screen and (min-width: 720px) {
+    .plantType {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.footFlex {
+    background-color: rgb(139, 139, 139);
+    border-top: 3px;
+    border-top-style: groove;
+    border-color: darkgoldenrod;
+    margin-top: 2rem;
+}
+
+.footFlex__internalLink {
+    display: none;
+}
+
+.footFlex__externalLink {
+    display: none;
+}
+.footFlex__text {
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (min-width: 720px) {
+    .footFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30rem;
+        background-color: rgb(139, 139, 139);
+        border-top: 3px;
+        border-top-style: groove;
+        border-color: darkgoldenrod;
+        margin-top: 20px;
+    }
+    .footFlex__externalLink {
+        height: 100%;
+        width: 500px;
+        display: inline;
+    }
+    .footFlex__internalLink {
+        height: 100%;
+        width: 500px;
+        display: inline;
+    }
+    .footFlex__text {
+        align-self: flex-end;
+    }
+}
+
+.gridIndex {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "img img texto"
+    "img img texto";
+    background-color: rgb(139, 139, 139);
+    margin-top: 2rem;
+    border: 3px groove goldenrod;
+}
+
+.gridIndex__titulo{
+    grid-area: titulo;
+    padding: 10px;
+    align-self: center;
+}
+.gridIndex__imagen {
+    grid-area: img;
+    width: 100%;
+}
+.gridIndex__descripcion {
+    grid-area: texto;
+    padding: 5px;
+    font-size: medium;
+}
+.contactForm {
+    text-decoration: solid;
+    font-size: large;
+    line-height: 30px;
+    padding: 3px;
+    margin: 2rem auto;
+    border: 3px groove goldenrod;
+    background-color: rgb(139, 139, 139);
+    width: fit-content;
+
+}
+
+.contactSubtitle {
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 150%;
+}
+.contactFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm {
+    text-decoration: solid;
+    font-size: large;
+    line-height: 30px;
+    padding: 3px;
+    border: 3px groove goldenrod;
+    background-color: rgb(139, 139, 139);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.signIn {
+    text-decoration: solid;
+    font-size: large;
+    line-height: 30px;
+    border: 3px groove goldenrod;
+    background-color: rgb(139, 139, 139);
+    grid-column: 1;
+    grid-row: 2;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.registerForm__field {
+    padding-top: 3px;
+}
+
+.gridRegistro {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+}
+
+th , td{
+    border-bottom: 2px;
+    text-align: center;
+    border-style: groove;
+    border-color: goldenrod;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.tableHolder {
+    height: 110px;
+    line-height: 1rem;
+    display: flex;
+    background-color: rgb(139, 139, 139);
+}
+
+.inventoryTable {
+    width: 100%;
+}
