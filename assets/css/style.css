@@ -36,7 +36,7 @@ header {
     }
 }
 
-a {
+a:not(.nav-link) {
     margin-left: 20px;
     margin-right: 20px;
     display: block;
@@ -54,7 +54,7 @@ a {
     transition: 1s;
 }
 
-a:hover {
+a:hover:not(.nav-link) {
     background-color: goldenrod;
     border-style: inset;
     border-color: rgb(102, 84, 30);
@@ -66,12 +66,16 @@ a:hover {
     }
 }
 
-.actual {
-    background-color:mediumaquamarine;
-    border-color: rgb(139, 139, 139);
+.actie {
+    background-color:rgb(196, 196, 196);
+    border-color: rgb(196, 196, 196);
     border-style: inset;
     padding: 15px;
     font-size: medium;
+}
+
+nav {
+    background-image: linear-gradient(rgb(123, 197, 171),papayawhip);
 }
 
 .navAnimation{
@@ -174,33 +178,22 @@ input, textarea, select {
     }
 }
 
-.footFlex {
-    background-image: linear-gradient(rgb(148, 198, 181), rgb(180, 250, 158));
-    border-top: 3px;
-    border-top-style: groove;
-    border-color: darkgoldenrod;
-    margin-top: 2rem;
+footer {
+    background-image: linear-gradient(papayawhip,rgb(123, 197, 171));
 }
+
 
 .footFlex__externalLink {
     display: none;
 }
 .footFlex__text {
-    text-align: center;
     font-size: larger;
 }
+.container {
+    justify-content: center;
+}
 
-@media screen and (min-width: 720px) {
-    .footFlex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: rgb(139, 139, 139);
-        border-top: 3px;
-        border-top-style: groove;
-        border-color: darkgoldenrod;
-        margin-top: 20px;
-    }
+@media screen and (min-width: 768px) {
     .footFlex__externalLink {
         width: 50%;
         height: 300px;
@@ -208,7 +201,9 @@ input, textarea, select {
     }
     .footFlex__text {
         align-self: center;
-        width: 50%;
+    }
+    .container {
+        justify-content: space-around;
     }
 }
 
