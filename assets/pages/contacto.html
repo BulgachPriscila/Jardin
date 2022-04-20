@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <img src="./../img/sprout.png" class="navbar-brand" alt="Logo brote" width="30"/>
+            <a href="./../../index.html" class="nav-link"><img src="./../img/sprout.png" class="navbar-brand" alt="Logo brote" width="30"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,36 +39,39 @@
     </nav>
     <div class="navAnimation">
     </div>
-    <h3 class="contactSubtitle">Aqui abajo les dejo para que completen en caso de necesitar contactarse</h3>
-    <div class="contactFlex">
-        <form class="contactForm">
-            <div>
-                <h1>Contacto</h1>
-                <label for="Nombre">Nombre/s:</label> 
-                <input type="text" name="Nombre"/>
+    <h3 class="contactSubtitle">Aqui debajo les dejo un formulario para que completen en caso de necesitar contactarse</h3>
+    <div class="contactForm">
+        <form>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Nombre y Apellido</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
             </div>
-            <div>
-                <label for="Apellido">Apellido/s:</label>
-                <input type="text" name="Apellido"/>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Direccion de email" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Ej: gmail.com" aria-label="Server">
             </div>
-            <div>
-                <label for="email" placeholder="ejemplo@mail.com">E-mail:</label>
-                <input type="email" name="email"/>
+            <div class="mb-2 form-check">
+                <label class="form-check-label" for="exampleCheck1">Subscribirse al Newsletter?</label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
             </div>
-            <div>Quiere subscribirse al Newsletter?
-                <input type="checkbox" name="acepta" value="1" />
+            <div class="input-group mb-3">
+                <span class="input-group-text">Consulta:</span>
+                <textarea class="form-control" rows="4" aria-label="With textarea"></textarea>
             </div>
-            <label for="contacto">Comentario o consulta: </label>
-            <div>
-                <textarea name="contacto" rows="6" cols="70" placeholder="Por favor detallar la razon de contacto o consulta"></textarea>
+            <p>En caso de querer subir una imagen o Screenshot:</p>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
             </div>
-            <div class="contactForm__buttons">
-                <input type="reset" value="Limpiar"/>
-                <input type="button" value="X"/>
-                <input type="submit" value="Enviar"/>
+            <div class="contactButtons">
+                <button type="reset" class="btn btn-outline-primary" value="Reset">Limpiar</button>
+                <button type="submit" class="btn btn-outline-primary" value="Submit">Enviar</button>
             </div>
         </form>
     </div>
+
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container d-flex">
             <p class="footFlex__text">Datos de contacto</p>

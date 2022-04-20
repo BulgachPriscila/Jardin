@@ -7,34 +7,6 @@ body {
     background-color: papayawhip;
     font-size: 62.5%;
 }
-header {
-    background-image: linear-gradient(rgb(180, 250, 158), rgb(148, 198, 181));
-    position: sticky;
-    top: 0px;
-    border-bottom: 3px;
-    border-bottom-style: groove;
-    border-color: darkgoldenrod;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-@media screen and (min-width: 720px) {
-    header {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
-.flexNav__Logo {
-    height: 3rem;
-    display: none;
-}
-@media screen and (min-width: 720px) {
-    .flexNav__Logo {
-        display: inline-block;
-    }
-}
 
 a:not(.nav-link) {
     margin-left: 20px;
@@ -60,22 +32,11 @@ a:hover:not(.nav-link) {
     border-color: rgb(102, 84, 30);
 }
 
-@media screen and (min-width: 720px){
-    a {
-        display: inline-block;
-    }
-}
-
-.actie {
-    background-color:rgb(196, 196, 196);
-    border-color: rgb(196, 196, 196);
-    border-style: inset;
-    padding: 15px;
-    font-size: medium;
-}
-
 nav {
     background-image: linear-gradient(rgb(123, 197, 171),papayawhip);
+}
+.nav-link {
+    font-size: large;
 }
 
 .navAnimation{
@@ -114,21 +75,10 @@ nav {
         background-color: violet;}
 }
 
-h1 {
+h1, h2, h3 {
     text-align: center;
     color: rgb(46, 45, 42);
     font-size: x-large;
-}
-
-h2 {
-    text-align: center;
-    color: rgb(46, 45, 42);
-    font-size: xx-large;
-}
-
-h3 {
-    text-align: center;
-    color: rgb(46, 45, 42);
 }
 
 input, textarea, select {
@@ -190,6 +140,7 @@ footer {
     font-size: larger;
 }
 .container {
+    width: 100%;
     justify-content: center;
 }
 
@@ -244,21 +195,31 @@ footer {
     line-height: 30px;
     padding: 3px;
     margin: 2rem auto;
-    border: 3px groove goldenrod;
-    background-image: radial-gradient(papayawhip, wheat);
-    width: fit-content;
-
+    border: 2px groove goldenrod;
+    background-image: radial-gradient(rgb(123, 197, 171), papayawhip);
+    width: 90%;
 }
-
-.contactSubtitle {
-    margin-top: 1rem;
-    text-align: center;
-    text-decoration: solid;
-    font-size: 150%;
+@media screen and (min-width: 900px) {
+    .contactForm {
+        width: 800px;
+    }
 }
-.contactFlex {
+.contactButtons {
+    justify-content: space-around;
     display: flex;
-    flex-direction: column;
+}
+.btn-outline-primary {
+    border-color: goldenrod;
+    border-style: outset;
+    border-width: 2px;
+    color: darkgoldenrod;
+}
+.btn-outline-primary:hover{
+    border-color: goldenrod;
+    border-style: inset;
+    border-width: 2px;
+    color: darkgoldenrod;
+    background-color: transparent;
 }
 
 .registerForm {
