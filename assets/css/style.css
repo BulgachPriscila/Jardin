@@ -30,6 +30,7 @@ a:hover:not(.nav-link) {
     background-color:rgb(155, 229, 203);
     border-style: inset;
     border-color: goldenrod;
+    color: black;
 }
 
 nav {
@@ -140,7 +141,7 @@ footer {
 .footFlex__text {
     font-size: larger;
 }
-.container {
+.containerFoot {
     width: 100%;
     justify-content: center;
 }
@@ -154,7 +155,7 @@ footer {
     .footFlex__text {
         align-self: center;
     }
-    .container {
+    .containerFoot {
         justify-content: space-around;
     }
 }
@@ -168,9 +169,6 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
 }
-.indexBox {
-    background: url(./../img/beige-tiles.png);
-}
 
 .contactForm {
     text-decoration: solid;
@@ -180,7 +178,6 @@ footer {
     margin: 2rem auto;
     border: 2px groove goldenrod;
     background-image: url(./../img/beige-tiles.png);
-    /*    background-image: radial-gradient(rgb(123, 197, 171), papayawhip);*/
     width: 90%;
 }
 @media screen and (min-width: 900px) {
@@ -238,24 +235,14 @@ footer {
     display: grid;
     justify-content: center;
 }
-
-th , td{
-    border-bottom: 2px;
-    text-align: center;
-    border-style: groove;
-    border-color: goldenrod;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.shopTop {
+    justify-content: space-around;
+}
+.card {
+    background-image: url(./../img/beige-tiles.png);
 }
 
-.tableHolder {
-    height: 110px;
-    line-height: 1rem;
-    display: flex;
-    background-image: radial-gradient(papayawhip, wheat);
-}
-
-.inventoryTable {
-    width: 100%;
+.shopBottom {
+    justify-content: space-around;
+    margin: 20px auto;
 }

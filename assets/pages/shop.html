@@ -39,71 +39,55 @@
     </nav>
     <div class="navAnimation">
     </div>
-    <h1>Shop</h1>
-    <h3>Aqui encontraremos desde semillas, hasta plantas y también las herramientas para poder tener en nuestra casa y poder empezar nuestro propio Jardin.</h4>
-    <h2>Inventario:</h2>
-    <div class="tableHolder">
-        <table class="inventoryTable">
-            <thead class="inventoryTable__head">
-                <tr class="inventoryTable__column">
-                    <th>Codigo</th>
-                    <th>Nombre</th>
-                    <th>Precio xU</th>
-                    <th>Colores</th>
-                </tr>
-            </thead>
-            <tbody class="inventoryTable__body">
-                <tr class="inventoryTable__column">
-                    <td>0001</td>
-                    <td>Maceta1</td>
-                    <td>$1</td>
-                    <td>
-                        <label for="color"></label>
-                        <select id="color">
-                            <option value="1">Blanco</option>
-                            <option value="2">Violeta</option>
-                            <option value="3">Verde</option>
-                            <option value="4">Azul</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr class="inventoryTable__column">
-                    <td>0002</td>
-                    <td>Maceta2</td>
-                    <td>$2</td>
-                    <td>
-                        <label for="color"></label>
-                        <select id="color">
-                            <option value="1">Blanco</option>
-                            <option value="2">Violeta</option>
-                            <option value="3">Verde</option>
-                            <option value="4">Azul</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr class="inventoryTable__column">
-                    <td>0003</td>
-                    <td>Maceta3</td>
-                    <td>$3</td>
-                    <td>
-                        <label for="color"></label>
-                        <select id="color">
-                            <option value="1">Blanco</option>
-                            <option value="2">Violeta</option>
-                            <option value="3">Verde</option>
-                            <option value="4">Azul</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-        <footer class="footer mt-auto py-3 bg-light">
-            <div class="container d-flex">
-                <p class="footFlex__text">Datos de contacto</p>
-                <iframe src="https://www.youtube-nocookie.com/embed/ZHwSjSOUxtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="footFlex__externalLink"></iframe>
+    <h1>Aqui encontraremos desde semillas, hasta plantas y también las herramientas para poder tener en nuestra casa y poder empezar nuestro propio Jardin.</h1>
+
+    <div class="row align-items-center shopTop">
+        <div class="card col-4 text-center suculentas">
+            <img src="./../img/suculentas.jpg" class="mt-2" alt="Suculentas">
+            <div class="card-body">
+                <h5 class="card-title">Suculentas</h5>
+                <a href="#" class="btn btn-primary">Suculentas</a>
             </div>
-        </footer>
-        <script src="./../js/bootstrap.bundle.min.js"></script>
+        </div>
+        <div class="card col-4 text-center cactus">
+            <img src="./../img/cactus.jpg" class="mt-2" alt="Cactus">
+            <div class="card-body">
+                <h5 class="card-title">Cactus</h5>
+                <a href="#" class="btn btn-primary">Cactus</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch shopBottom">
+        <div class="col-md-4">
+            <div class="h-100 p-5 bg-light border rounded-3 card">
+                <h2>Herramientas</h2>
+                <p class="text-center">Acá podrás ver herramientas para tu propio jardín.</p>
+                <a href="#"> Herramientas </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 p-5 bg-light border rounded-3 card">
+                <h2>Macetas</h2>
+                <p class="text-center">Aca podrás ver las macetas que tenemos en stock.</p>
+                <a href="#"> Macetas </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 p-5 bg-light border rounded-3 card">
+                <h2>Ofertas</h2>
+                <p class="text-center">Aca podrás ver las ofertas de la semana.</p>
+                <a href="#"> Ofertas </a>   
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="containerFoot d-flex">
+            <p class="footFlex__text">Datos de contacto</p>
+            <iframe src="https://www.youtube-nocookie.com/embed/ZHwSjSOUxtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="footFlex__externalLink"></iframe>
+        </div>
+    </footer>
+    <script src="./../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
