@@ -14,8 +14,8 @@ a:not(.nav-link) {
     display: block;
     border-style: outset;
     border-radius: 10px;
-    border-color: rgb(102, 84, 30);
-    background-color: rgb(123, 197, 171);
+    border-color:rgb(123, 197, 171);
+    background-color: papayawhip;
     color: rgb(46, 45, 42);
     text-decoration: none;
     padding: 10px;
@@ -27,9 +27,9 @@ a:not(.nav-link) {
 }
 
 a:hover:not(.nav-link) {
-    background-color: goldenrod;
+    background-color:rgb(155, 229, 203);
     border-style: inset;
-    border-color: rgb(102, 84, 30);
+    border-color: goldenrod;
 }
 
 nav {
@@ -48,6 +48,7 @@ nav {
     animation-timing-function:ease-in-out;
     animation-duration: 5s;
     animation-delay: 1s;
+    margin-bottom: 20px;
 }
 
 @keyframes rainbow_bar {
@@ -157,38 +158,20 @@ footer {
         justify-content: space-around;
     }
 }
-
-.gridIndex {
-    display: grid;
-    justify-content: space-around;
-    align-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-areas:
-    "titulo titulo titulo"
-    "img img texto"
-    "img img texto";
-    background-image: radial-gradient(papayawhip, wheat);
-    margin-top: 2rem;
+.bienvenidos{
+    background: url(./../img/beige-tiles.png);
     margin-left: 5%;
     margin-right: 5%;
-    border: 3px groove goldenrod;
+}
+.indexOptions {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.indexBox {
+    background: url(./../img/beige-tiles.png);
 }
 
-.gridIndex__titulo{
-    grid-area: titulo;
-    padding: 10px;
-    align-self: center;
-}
-.gridIndex__imagen {
-    grid-area: img;
-    width: 100%;
-}
-.gridIndex__descripcion {
-    grid-area: texto;
-    padding: 5px;
-    font-size: medium;
-}
 .contactForm {
     text-decoration: solid;
     font-size: large;
@@ -196,7 +179,8 @@ footer {
     padding: 3px;
     margin: 2rem auto;
     border: 2px groove goldenrod;
-    background-image: radial-gradient(rgb(123, 197, 171), papayawhip);
+    background-image: url(./../img/beige-tiles.png);
+    /*    background-image: radial-gradient(rgb(123, 197, 171), papayawhip);*/
     width: 90%;
 }
 @media screen and (min-width: 900px) {
