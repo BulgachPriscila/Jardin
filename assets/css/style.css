@@ -83,57 +83,13 @@ h1, h2, h3 {
     font-size: x-large;
 }
 
-input, textarea, select {
-    border-color: goldenrod;
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 2px;
-}
-
-.plantType {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.plantType__box {
-    width: 300px;
-    margin: 2rem auto;
-    padding: 5px;
-    border-style: groove;
-    border-width: 4px;
-    border-color:darkgoldenrod;
-    background-image: radial-gradient(papayawhip, wheat);
-    transition: 1s;
-}
-
-
-.plantType__box__image {
-    width: 100%;
-    padding-bottom: 10px;
-}
-.plantType__box:hover {
-    width: 350px;
-}
-
-.plantType__box__description--name {
-    text-decoration: underline;
-    padding-bottom: 5px;
-    font-size: large;
-}
-@media screen and (min-width: 720px) {
-    .plantType {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+input, textarea{
+    background-image: url(./../img/moroccan-flower.png);
 }
 
 footer {
     background-image: linear-gradient(papayawhip,rgb(123, 197, 171));
 }
-
 
 .footFlex__externalLink {
     display: none;
@@ -203,38 +159,6 @@ footer {
     background-color: transparent;
 }
 
-.registerForm {
-    text-decoration: solid;
-    font-size: large;
-    line-height: 30px;
-    padding: 3px;
-    border: 3px groove goldenrod;
-    background-image: radial-gradient(papayawhip, wheat);
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.signIn {
-    text-decoration: solid;
-    font-size: large;
-    line-height: 30px;
-    border: 3px groove goldenrod;
-    background-image: radial-gradient(papayawhip, wheat);
-    grid-column: 1;
-    grid-row: 2;
-    margin: 1rem auto;
-    width: fit-content;
-}
-
-.registerForm__field {
-    padding-top: 3px;
-}
-
-.gridRegistro {
-    margin-top: 2rem;
-    display: grid;
-    justify-content: center;
-}
 .shopTop {
     justify-content: space-around;
 }
