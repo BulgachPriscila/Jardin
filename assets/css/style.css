@@ -160,7 +160,28 @@ footer {
 }
 
 .shopTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+}
+.cactus {
+    width: 90%;
+}
+.suculentas {
+    width: 90%;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+    .shopTop {
+        flex-direction: row;
+    }
+    .cactus {
+        width: 40%;
+    }
+    .suculentas {
+        width: 40%;
+    }
 }
 .card {
     background-image: url(./../img/beige-tiles.png);
@@ -168,5 +189,6 @@ footer {
 
 .shopBottom {
     justify-content: space-around;
-    margin: 20px auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
