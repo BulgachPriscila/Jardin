@@ -15,7 +15,7 @@ a:not(.nav-link) {
   border-radius: 10px;
   border-color: #7bc5ab;
   background-color: papayawhip;
-  color: #2e2d2a;
+  color: #3e250a;
   text-decoration: none;
   padding: 10px;
   margin: 5px;
@@ -25,10 +25,10 @@ a:not(.nav-link) {
   transition: 1s; }
 
 a:hover:not(.nav-link) {
-  background-color: #9be5cb;
+  background-color: #7bc5ab;
   border-style: inset;
   border-color: goldenrod;
-  color: black; }
+  color: #3e250a; }
 
 nav {
   background-image: linear-gradient(#7bc5ab, papayawhip); }
@@ -43,7 +43,7 @@ nav {
   animation-name: rainbow_bar;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 5s;
+  animation-duration: 20s;
   animation-delay: 1s;
   margin-bottom: 20px; }
 
@@ -84,7 +84,7 @@ nav {
 
 h1, h2, h3 {
   text-align: center;
-  color: #2e2d2a;
+  color: #3e250a;
   font-size: x-large; }
 
 input, textarea {
@@ -176,7 +176,8 @@ footer {
     width: 40%; } }
 
 .card {
-  background-image: url(./../img/beige-tiles.png); }
+  background-image: url(./../img/beige-tiles.png);
+  color: #3e250a; }
 
 .shopBottom {
   justify-content: space-around;
