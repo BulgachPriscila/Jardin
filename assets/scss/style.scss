@@ -15,6 +15,11 @@ $text-color: rgb(62, 37, 10);
 $border-hover: goldenrod;
 $mobileCard-size: 90%;
 
+@mixin spaceAround{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 body {
     background-color: $body-backgound;
@@ -128,13 +133,11 @@ footer {
 }
 .indexOptions {
     width: $mobileCard-size;
-    margin-left: 5%;
-    margin-right: 5%;
+    @include spaceAround;
 }
 .bienvenidos{
     background: $beigeImg-backgound;
-    margin-left: 5%;
-    margin-right: 5%;
+    @include spaceAround;
 }
 
 .contactForm {
