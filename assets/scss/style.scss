@@ -6,12 +6,15 @@
 
 $body-backgound: papayawhip;
 $nav-backgound: linear-gradient(rgb(123, 197, 171),papayawhip);
+$footer-background: linear-gradient(papayawhip,rgb(123, 197, 171));
 $button-color: darkgoldenrod;
 $button-border: rgb(123, 197, 171);
-$greenimg-background: url(./../img/moroccan-flower.png);
-$beigeimg-backgound: url(./../img/beige-tiles.png);
+$greenImg-background: url(./../img/moroccan-flower.png);
+$beigeImg-backgound: url(./../img/beige-tiles.png);
 $text-color: rgb(62, 37, 10);
-$borderhover: goldenrod;
+$border-hover: goldenrod;
+$mobileCard-size: 90%;
+
 
 body {
     background-color: $body-backgound;
@@ -19,8 +22,6 @@ body {
 }
 
 a:not(.nav-link) {
-    margin-left: 20px;
-    margin-right: 20px;
     display: block;
     border-style: outset;
     border-radius: 10px;
@@ -39,15 +40,16 @@ a:not(.nav-link) {
 a:hover:not(.nav-link) {
     background-color: $button-border;
     border-style: inset;
-    border-color: $borderhover;
+    border-color: $border-hover;
     color: $text-color;
 }
 
 nav {
     background-image: $nav-backgound;
-}
-.nav-link {
-    font-size: large;
+
+    & a {
+        font-size: large;
+    }
 }
 
 .navAnimation{
@@ -94,44 +96,43 @@ h1, h2, h3 {
 }
 
 input, textarea{
-    background-image: $greenimg-background;
+    background-image: $greenImg-background;
 }
 
 footer {
-    background-image: linear-gradient(papayawhip,rgb(123, 197, 171));
-}
-
-.footFlex__externalLink {
-    display: none;
-}
-.footFlex__text {
-    font-size: larger;
-}
-.containerFoot {
-    width: 100%;
-    justify-content: center;
+    background-image: $footer-background;
+    div{
+        width: 100%;
+        justify-content: center;
+    }
+    & iframe{
+        display: none;
+    }
+    & p{
+        font-size: larger;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .footFlex__externalLink {
+    footer iframe {
         width: 50%;
         height: 300px;
         display: inline;
     }
-    .footFlex__text {
+    footer p {
+        width: 50%;
         align-self: center;
-    }
-    .containerFoot {
-        justify-content: space-around;
+        text-align: center;
     }
 }
 .bienvenidos{
-    background: $beigeimg-backgound;
+    background: $beigeImg-backgound;
     margin-left: 5%;
     margin-right: 5%;
 }
 .indexOptions {
-    width: 90%;
+    width: $mobileCard-size;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -142,9 +143,9 @@ footer {
     line-height: 30px;
     padding: 3px;
     margin: 2rem auto;
-    border: 2px groove $borderhover;
-    background-image: $beigeimg-backgound;
-    width: 90%;
+    border: 2px groove $border-hover;
+    background-image: $beigeImg-backgound;
+    width: $mobileCard-size;
 }
 @media screen and (min-width: 900px) {
     .contactForm {
@@ -156,35 +157,42 @@ footer {
     display: flex;
 }
 .btn-outline-primary {
-    border-color: $borderhover;
+    border-color: $border-hover;
     border-style: outset;
     border-width: 2px;
     color: $button-color;
+    &:hover{
+        border-color: $border-hover;
+        border-style: inset;
+        border-width: 2px;
+        color: $button-color;
+        background-color: transparent;
+    }
 }
-.btn-outline-primary:hover{
-    border-color: $borderhover;
-    border-style: inset;
-    border-width: 2px;
-    color: $button-color;
-    background-color: transparent;
-}
+
 
 .shopTop {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%;
+}
+.shopBottom {
+    margin-left: auto;
+    margin-right: auto;
 }
 .cactus {
-    width: 90%;
+    width: $mobileCard-size;
+    margin-bottom: 10px;
 }
 .suculentas {
-    width: 90%;
+    width: $mobileCard-size;
     margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
     .shopTop {
         flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
     }
     .cactus {
         width: 40%;
@@ -192,14 +200,14 @@ footer {
     .suculentas {
         width: 40%;
     }
+    .shopBottom {
+        justify-content: space-around;
+    }
 }
 .card {
-    background-image: $beigeimg-backgound;
+    background-image: $beigeImg-backgound;
     color: $text-color;
+    border: 2px outset;
+    border-color:rgb(123, 197, 171) rgb(123, 197, 171)  papayawhip rgb(123, 197, 171);
 }
 
-.shopBottom {
-    justify-content: space-around;
-    margin-right: auto;
-    margin-top: 20px;
-}
