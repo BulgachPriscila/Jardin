@@ -126,13 +126,13 @@ footer {
         text-align: center;
     }
 }
-.bienvenidos{
-    background: $beigeImg-backgound;
+.indexOptions {
+    width: $mobileCard-size;
     margin-left: 5%;
     margin-right: 5%;
 }
-.indexOptions {
-    width: $mobileCard-size;
+.bienvenidos{
+    background: $beigeImg-backgound;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -170,7 +170,6 @@ footer {
     }
 }
 
-
 .shopTop {
     display: flex;
     flex-direction: column;
@@ -185,8 +184,7 @@ footer {
     margin-bottom: 10px;
 }
 .suculentas {
-    width: $mobileCard-size;
-    margin-bottom: 10px;
+    @extend .cactus;
 }
 @media screen and (min-width: 768px) {
     .shopTop {

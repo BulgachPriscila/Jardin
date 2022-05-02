@@ -108,13 +108,13 @@ footer {
     align-self: center;
     text-align: center; } }
 
-.bienvenidos {
-  background: url(./../img/beige-tiles.png);
+.indexOptions {
+  width: 90%;
   margin-left: 5%;
   margin-right: 5%; }
 
-.indexOptions {
-  width: 90%;
+.bienvenidos {
+  background: url(./../img/beige-tiles.png);
   margin-left: 5%;
   margin-right: 5%; }
 
@@ -157,11 +157,7 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
-.cactus {
-  width: 90%;
-  margin-bottom: 10px; }
-
-.suculentas {
+.cactus, .suculentas {
   width: 90%;
   margin-bottom: 10px; }
 
@@ -170,7 +166,7 @@ footer {
     flex-direction: row;
     width: 100%;
     justify-content: space-around; }
-  .cactus {
+  .cactus, .suculentas {
     width: 40%; }
   .suculentas {
     width: 40%; }
