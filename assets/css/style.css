@@ -8,8 +8,6 @@ body {
   font-size: 62.5%; }
 
 a:not(.nav-link) {
-  margin-left: 20px;
-  margin-right: 20px;
   display: block;
   border-style: outset;
   border-radius: 10px;
@@ -32,9 +30,8 @@ a:hover:not(.nav-link) {
 
 nav {
   background-image: linear-gradient(#7bc5ab, papayawhip); }
-
-.nav-link {
-  font-size: large; }
+  nav a {
+    font-size: large; }
 
 .navAnimation {
   display: block;
@@ -92,34 +89,32 @@ input, textarea {
 
 footer {
   background-image: linear-gradient(papayawhip, #7bc5ab); }
-
-.footFlex__externalLink {
-  display: none; }
-
-.footFlex__text {
-  font-size: larger; }
-
-.containerFoot {
-  width: 100%;
-  justify-content: center; }
+  footer div {
+    width: 100%;
+    justify-content: center; }
+  footer iframe {
+    display: none; }
+  footer p {
+    font-size: larger;
+    margin-bottom: 0px; }
 
 @media screen and (min-width: 768px) {
-  .footFlex__externalLink {
+  footer iframe {
     width: 50%;
     height: 300px;
     display: inline; }
-  .footFlex__text {
-    align-self: center; }
-  .containerFoot {
-    justify-content: space-around; } }
-
-.bienvenidos {
-  background: url(./../img/beige-tiles.png);
-  margin-left: 5%;
-  margin-right: 5%; }
+  footer p {
+    width: 50%;
+    align-self: center;
+    text-align: center; } }
 
 .indexOptions {
   width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.bienvenidos {
+  background: url(./../img/beige-tiles.png);
   margin-left: 5%;
   margin-right: 5%; }
 
@@ -146,40 +141,40 @@ footer {
   border-style: outset;
   border-width: 2px;
   color: darkgoldenrod; }
-
-.btn-outline-primary:hover {
-  border-color: goldenrod;
-  border-style: inset;
-  border-width: 2px;
-  color: darkgoldenrod;
-  background-color: transparent; }
+  .btn-outline-primary:hover {
+    border-color: goldenrod;
+    border-style: inset;
+    border-width: 2px;
+    color: darkgoldenrod;
+    background-color: transparent; }
 
 .shopTop {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around; }
+  width: 100%; }
 
-.cactus {
-  width: 90%; }
+.shopBottom {
+  margin-left: auto;
+  margin-right: auto; }
 
-.suculentas {
+.cactus, .suculentas {
   width: 90%;
   margin-bottom: 10px; }
 
 @media screen and (min-width: 768px) {
   .shopTop {
-    flex-direction: row; }
-  .cactus {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around; }
+  .cactus, .suculentas {
     width: 40%; }
   .suculentas {
-    width: 40%; } }
+    width: 40%; }
+  .shopBottom {
+    justify-content: space-around; } }
 
 .card {
   background-image: url(./../img/beige-tiles.png);
-  color: #3e250a; }
-
-.shopBottom {
-  justify-content: space-around;
-  margin-right: auto;
-  margin-top: 20px; }
+  color: #3e250a;
+  border: 2px outset;
+  border-color: #7bc5ab #7bc5ab papayawhip #7bc5ab; }
