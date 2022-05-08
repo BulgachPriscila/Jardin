@@ -178,3 +178,13 @@ footer {
   color: #3e250a;
   border: 2px outset;
   border-color: #7bc5ab #7bc5ab papayawhip #7bc5ab; }
+
+.listaGaleria {
+  list-style-type: square;
+  font-size: medium;
+  text-align: left;
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .listaGaleria {
+    display: block; } }
